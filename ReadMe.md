@@ -5,6 +5,21 @@ For this media component i have used Flowjs library.
 This component previews the image you upload and on click it allows you to upload a new image.
 
 * On Profile.Vue is a sample how this component can be used.
+* FileService.js -> Gets base64 image from api and converts to image.
+``` javascript 
+export default {
+    getBase64(file) {
+        return new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                resolve(e.target.result);
+            };
+            reader.readAsDataURL(file);
+        });
+    }
+};
+```
+----
 
 This is a single upload component .
  
