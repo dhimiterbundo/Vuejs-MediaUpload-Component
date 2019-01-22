@@ -4,6 +4,8 @@ For this media component i have used Flowjs library.
 
 This component previews the image you upload and on click it allows you to upload a new image.
 
+* On Profile.Vue is a sample how this component can be used.
+
 This is a single upload component .
  
  ``` javascript
